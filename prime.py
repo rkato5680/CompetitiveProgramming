@@ -1,3 +1,14 @@
+# check whether the given positive integer is prime or not
+
+def is_prime(n):
+    max_factor = int(np.sqrt(n))
+    for i in range(2, max_factor+1):
+        if n % i == 0:
+            return False
+    return True
+
+
+
 # list all prime numbers in closed interval [L,R]
 
 def sieve(L,R):
